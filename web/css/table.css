@@ -1,0 +1,53 @@
+
+.table {
+    width: 100%;
+}
+
+.table th, .table tfoot {
+    background-color: #E0E0E0;
+}
+
+
+.table > tbody > tr:hover , .table > tbody > tr.checked{
+    background-color:  #4FC1E9;
+}
+
+.table a,.table a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.table a:hover {
+    color: #989898;
+}
+
+.table .update-button:hover {
+    cursor: pointer;
+    color: #989898;
+}
+
+.pagination{
+    margin-top: 0;
+
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #000;
+}
+
+.pagination>li.active>a {
+    background: #E0E0E0;
+    color: #000;
+    border: 1px solid transparent;
+}
+
+.pagination>li.active>a:hover {
+    background-color:  #4FC1E9;
+    color: #000;
+}
+
+
+.create-button {
+    float: right;
+}

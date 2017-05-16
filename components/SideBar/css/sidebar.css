@@ -1,0 +1,116 @@
+.sidebar{
+    position:fixed;
+    width: 350px;
+    height: 100%;
+    padding-top: 50px;
+    margin-top: -50px;
+    overflow: auto;
+    background-color: #333;
+}
+
+.sidebar-content ul{
+    margin: 0.5em 0 0 0.3em;
+    padding: 0;
+
+}
+
+.sidebar-content ul li{
+    height: 24px;
+    padding:0.15em 0 0.5em 1.5em;
+    list-style: none ;
+    margin-bottom:0.3em;
+    text-indent:0.4em;
+}
+
+.sidebar-content ul li:hover {
+    background-color: #444;
+}
+
+
+ul.schema-list li {
+    background-image:url('../images/database.png');
+    background-repeat: no-repeat;
+}
+
+ul.table-list li {
+    background-image:url('../images/table.png');
+    background-repeat: no-repeat;
+}
+
+
+a, a:hover , a:visited{
+    color: #CDCDCD;
+    text-decoration: none;
+}
+
+
+.breadcrumb-arrow {
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    list-style: none;
+    background-color: #444;
+}
+.breadcrumb-arrow li:first-child a {
+    border-radius: 0 0 0 0;
+}
+.breadcrumb-arrow li, .breadcrumb-arrow li a{
+    display: inline-block;
+    vertical-align: top;
+}
+.breadcrumb-arrow li:not(:first-child) {
+    margin-left: -5px;
+}
+.breadcrumb-arrow li+li:before {
+    padding: 0;
+    content: "";
+}
+
+.breadcrumb-arrow li a{
+    height: 36px;
+    padding: 0 10px 0 25px;
+    line-height: 36px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    background-color: #3bafda;
+    border: 1px solid #3bafda;
+}
+
+.breadcrumb-arrow li:first-child a {
+    padding: 0 10px;
+}
+
+.breadcrumb-arrow li a:after, .breadcrumb-arrow li a:before {
+    position: absolute;
+    top: -1px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+}
+.breadcrumb-arrow li a:before {
+    right: -10px;
+    z-index: 3;
+    border-left: 11px solid #3bafda;
+}
+.breadcrumb-arrow li a:after {
+    right: -11px;
+    z-index: 2;
+    border-left: 11px solid #2494be;
+}
+.breadcrumb-arrow li a:focus, .breadcrumb-arrow li a:hover {
+    background-color: #4fc1e9;
+    border: 1px solid #4fc1e9;
+}
+.breadcrumb-arrow li a:focus:before, .breadcrumb-arrow li a:hover:before {
+    border-left-color: #4fc1e9;
+}
+.breadcrumb-arrow li a:active {
+    background-color: #2494be;
+    border: 1px solid #2494be;
+}
+.breadcrumb-arrow li a:active:after, .breadcrumb-arrow li a:active:before {
+    border-left-color: #2494be;
+}
